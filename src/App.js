@@ -3,11 +3,6 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import React, { useState } from 'react'
 import Alert from './components/Alert';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route
-// } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState('light'); // whether dark mode is enabled or not
@@ -36,13 +31,11 @@ function App() {
   }
   return (
     <>
-
       <Navbar title="AtlanSQL" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div class="container my-3">
         <Home heading="Enter your SQL query" showAlert={showAlert} mode={mode} />
       </div>
-
     </>
   );
 }

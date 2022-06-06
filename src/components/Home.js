@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 
 export default function Home(props) {
     const runQuery = ()=>{
-       // console.log("Uppercase was clicked :  "+text);
         let newText = text.toUpperCase();
         setText(newText);
         props.showAlert("Your query running!","success");
